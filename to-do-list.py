@@ -42,7 +42,7 @@ while True:
                 print("Invalid task number.")
 
     elif choice == '5':
-        print("Ending the To-do List App.")
+        print("Closing the To-do List App.")
         break
 
     else:
