@@ -1,0 +1,6 @@
+this goal of this code is to create a to-do list app that 
+   Display To-Do List
+   Add Task
+   Mark Task as Completed
+   and 
+   Remove Task
