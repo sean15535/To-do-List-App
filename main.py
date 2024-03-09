@@ -1,4 +1,4 @@
-from functions import greetings, 
+from functions import greetings, add_list
 print("Welcome to To-do List App")
 
 while True:
@@ -8,10 +8,7 @@ while True:
     if choice == 1:
         greetings()
     elif choice == 2:
-        task = input("Enter the task you want to add: ")
-        todo_list.append(task)
-        print(f"Task '{task}' has been added to your to-do list.")
-
+        add_list()
     elif choice == 3:
         if not todo_list:
             print("Your To-do list is empty")
