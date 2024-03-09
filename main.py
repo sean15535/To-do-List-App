@@ -1,26 +1,12 @@
-todo_list = []
+from functions import greetings, 
 print("Welcome to To-do List App")
 
 while True:
-    print("\nWhat are your plans for today?")
-    print("1. Display To-Do List\n2. Add Task\n3. Mark Task as Completed\n4. Remove Task\n5. Exit")
-    choice = input(">>> ")
-
-    # Input Validation
-    if not choice.isdigit():
-        print("Invalid input. Please enter a numeric choice.")
-        continue
-
-    choice = int(choice)
+    greetings()
+    choice = int(input(">>> "))
 
     if choice == 1:
-        if not todo_list:
-            print("Your To-do list is empty")
-        else:
-            print("Your To-Do List:")
-            for index, task in enumerate(todo_list, start=1):
-                print(f"{index}. {task}")
-
+        greetings()
     elif choice == 2:
         task = input("Enter the task you want to add: ")
         todo_list.append(task)
