@@ -27,3 +27,22 @@ def completed_task():
          return
     except ValueError:
                 print("Invalid Task Number. Please enter a numeric task number.")
+
+# ... Other functions ...
+
+def delete_task():
+    if not todo_list:
+        print("Task list is empty.")
+        return
+    try:
+        display_list()
+        task_number = int(input("Enter the task number to delete: "))
+        if task_number < 1 or task_number > len(todo_list):
+            print("Invalid task number. Please try again.")
+        else:
+            removed_task = todo_list.pop(task_number - 1)
+            print(f"Task '{removed_task}' deleted successfully.")
+    except ValueError:
+        print("Invalid input. Please enter a number.")
+    except IndexError:
+        print("Invalid task number. Please try again.")
